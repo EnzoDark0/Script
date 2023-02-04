@@ -1,1044 +1,281 @@
-
-local ScreenGui = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
-local Menus = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local menu = Instance.new("ImageButton")
-local TextButton_2 = Instance.new("TextButton")
-local TextButton_3 = Instance.new("TextButton")
-local hubframe = Instance.new("Frame")
-local TextButton_4 = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local Frame = Instance.new("Frame")
-local TextButton_5 = Instance.new("TextButton")
-local Frame_2 = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local TextButton_6 = Instance.new("TextButton")
-local Frame_3 = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
-local UIListLayout = Instance.new("UIListLayout")
-local CloseFrame = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local menu_2 = Instance.new("ImageButton")
-local close = Instance.new("ImageButton")
-local MainFramee = Instance.new("Frame")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local TextButton_7 = Instance.new("TextButton")
-local Frame_4 = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
-local UICorner_5 = Instance.new("UICorner")
-local Follow = Instance.new("ImageLabel")
-local UIListLayout_2 = Instance.new("UIListLayout")
-local Walknum = Instance.new("TextBox")
-local UICorner_6 = Instance.new("UICorner")
-local Frame_5 = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
-local TextButton_8 = Instance.new("TextButton")
-local Frame_6 = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
-local UICorner_9 = Instance.new("UICorner")
-local Follow_2 = Instance.new("ImageLabel")
-local noti = Instance.new("Frame")
-local TextLabel_2 = Instance.new("TextLabel")
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
-local TextLabel_3 = Instance.new("TextLabel")
-local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
-local close_2 = Instance.new("ImageButton")
-local Main_ShadowPng = Instance.new("ImageLabel")
-local MainFrame = Instance.new("Frame")
-local fpsframe = Instance.new("Frame")
-local ScrollingFrame_2 = Instance.new("ScrollingFrame")
-local UIListLayout_3 = Instance.new("UIListLayout")
-local AimbotButton = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local Frame_7 = Instance.new("Frame")
-local ESPButton = Instance.new("TextButton")
-local Frame_8 = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
-local UIListLayout_4 = Instance.new("UIListLayout")
-local openframe = Instance.new("Frame")
-local eeeee = Instance.new("TextLabel")
-local Openbutton = Instance.new("ImageButton")
-local loginframe = Instance.new("Frame")
-local TextLabel_4 = Instance.new("TextLabel")
-local Frame_9 = Instance.new("Frame")
-local Password = Instance.new("TextBox")
-local UICorner_12 = Instance.new("UICorner")
-local Loginbutton = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
-local UICorner_14 = Instance.new("UICorner")
-local UICorner_15 = Instance.new("UICorner")
-local noti_2 = Instance.new("Frame")
-local ImageLabel = Instance.new("ImageLabel")
-local TextLabel_5 = Instance.new("TextLabel")
-local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
-local copy = Instance.new("TextButton")
-local TextLabel_6 = Instance.new("TextLabel")
-local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
-
---Properties:
-
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Main.Name = "Main"
-Main.Parent = ScreenGui
-Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.408735335, 0, 0.201365158, 0)
-Main.Size = UDim2.new(0, 290, 0, 280)
-Main.Visible = false
-Main.Draggable = true
-Menus.Name = "Menus"
-Menus.Parent = Main
-Menus.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-Menus.BorderSizePixel = 0
-Menus.Position = UDim2.new(0, 0, -0.0942856893, 0)
-Menus.Size = UDim2.new(0, 120, 0, 306)
-Menus.Visible = false
-Menus.ZIndex = 999999999
-
-TextButton.Parent = Menus
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.Position = UDim2.new(0, 0, 0.342036545, 0)
-TextButton.Size = UDim2.new(0, 120, 0, 50)
-TextButton.ZIndex = 999999999
-TextButton.Font = Enum.Font.Gotham
-TextButton.Text = "FPS"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 14.000
-
-menu.Name = "menu"
-menu.Parent = Menus
-menu.BackgroundTransparency = 1.000
-menu.Position = UDim2.new(0.0609195568, 0, 0.0101990849, 0)
-menu.Size = UDim2.new(0, 25, 0, 25)
-menu.ZIndex = 7
-menu.Image = "rbxassetid://3926305904"
-menu.ImageRectOffset = Vector2.new(604, 684)
-menu.ImageRectSize = Vector2.new(36, 36)
-
-TextButton_2.Parent = Menus
-TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.BackgroundTransparency = 1.000
-TextButton_2.Position = UDim2.new(0, 0, 0.211488247, 0)
-TextButton_2.Size = UDim2.new(0, 120, 0, 50)
-TextButton_2.ZIndex = 999999999
-TextButton_2.Font = Enum.Font.Gotham
-TextButton_2.Text = "Hubs"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextSize = 14.000
-
-TextButton_3.Parent = Menus
-TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.BackgroundTransparency = 1.000
-TextButton_3.Position = UDim2.new(0, 0, 0.0835509002, 0)
-TextButton_3.Size = UDim2.new(0, 120, 0, 50)
-TextButton_3.ZIndex = 999999999
-TextButton_3.Font = Enum.Font.Gotham
-TextButton_3.Text = "Home"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextSize = 14.000
-
-hubframe.Name = "hubframe"
-hubframe.Parent = Main
-hubframe.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-hubframe.BorderSizePixel = 0
-hubframe.Position = UDim2.new(0, 0, 0, 21)
-hubframe.Size = UDim2.new(0, 290, 0, 256)
-hubframe.Visible = false
-hubframe.ZIndex = 100
-
-TextButton_4.Parent = hubframe
-TextButton_4.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TextButton_4.Position = UDim2.new(0.155172408, 0, 0.0400000066, 0)
-TextButton_4.Size = UDim2.new(0, 267, 0, 50)
-TextButton_4.ZIndex = 10
-TextButton_4.Font = Enum.Font.GothamMedium
-TextButton_4.Text = "Simplity"
-TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_4.TextSize = 16.000
-
-UICorner.Parent = TextButton_4
-
-Frame.Parent = TextButton_4
-Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0, 0, 0.900000036, 0)
-Frame.Size = UDim2.new(0, 267, 0, 6)
-
-TextButton_5.Parent = hubframe
-TextButton_5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TextButton_5.Position = UDim2.new(0.155172408, 0, 0.225714296, 0)
-TextButton_5.Size = UDim2.new(0, 267, 0, 50)
-TextButton_5.ZIndex = 10
-TextButton_5.Font = Enum.Font.GothamMedium
-TextButton_5.Text = "Universal"
-TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_5.TextSize = 16.000
-
-Frame_2.Parent = TextButton_5
-Frame_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0, 0, 0.900000036, 0)
-Frame_2.Size = UDim2.new(0, 267, 0, 6)
-
-UICorner_2.Parent = TextButton_5
-
-TextButton_6.Parent = hubframe
-TextButton_6.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TextButton_6.Position = UDim2.new(0.155172408, 0, 0.428571433, 0)
-TextButton_6.Size = UDim2.new(0, 267, 0, 50)
-TextButton_6.ZIndex = 10
-TextButton_6.Font = Enum.Font.GothamMedium
-TextButton_6.Text = "C00lkidd "
-TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_6.TextSize = 16.000
-
-Frame_3.Parent = TextButton_6
-Frame_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Frame_3.BorderSizePixel = 0
-Frame_3.Position = UDim2.new(0, 0, 0.900000036, 0)
-Frame_3.Size = UDim2.new(0, 267, 0, 6)
-
-UICorner_3.Parent = TextButton_6
-
-UIListLayout.Parent = hubframe
-UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.Padding = UDim.new(0, 12)
-
-CloseFrame.Name = "CloseFrame"
-CloseFrame.Parent = Main
-CloseFrame.BackgroundColor3 = Color3.fromRGB(0, 4, 1)
-CloseFrame.BorderSizePixel = 0
-CloseFrame.Position = UDim2.new(0, 0, -0.0914285928, 0)
-CloseFrame.Size = UDim2.new(0, 290, 0, 32)
-CloseFrame.Draggable = true
-
-TextLabel.Parent = CloseFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Size = UDim2.new(0, 290, 0, 32)
-TextLabel.Font = Enum.Font.GothamMedium
-TextLabel.Text = "Scripts"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 14.000
-
-menu_2.Name = "menu"
-menu_2.Parent = CloseFrame
-menu_2.BackgroundTransparency = 1.000
-menu_2.Position = UDim2.new(0.0368620679, 0, 0.0724999979, 0)
-menu_2.Size = UDim2.new(0, 25, 0, 25)
-menu_2.ZIndex = 2
-menu_2.Image = "rbxassetid://3926305904"
-menu_2.ImageRectOffset = Vector2.new(604, 684)
-menu_2.ImageRectSize = Vector2.new(36, 36)
-
-close.Name = "close"
-close.Parent = CloseFrame
-close.BackgroundTransparency = 1.000
-close.Position = UDim2.new(0.913793087, 0, 0.09375, 0)
-close.Size = UDim2.new(0, 25, 0, 25)
-close.ZIndex = 200000000
-close.Image = "rbxassetid://3926305904"
-close.ImageRectOffset = Vector2.new(284, 4)
-close.ImageRectSize = Vector2.new(24, 24)
-
-MainFramee.Name = "MainFramee"
-MainFramee.Parent = Main
-MainFramee.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-MainFramee.BorderSizePixel = 0
-MainFramee.Position = UDim2.new(0, 0, 0, 10)
-MainFramee.Size = UDim2.new(0, 290, 0, 268)
-MainFramee.ZIndex = 2
-
-ScrollingFrame.Parent = MainFramee
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScrollingFrame.BackgroundTransparency = 1.000
-ScrollingFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
-ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0, 0, 0.0223880596, 0)
-ScrollingFrame.Size = UDim2.new(0, 290, 0, 264)
-ScrollingFrame.ZIndex = 100
-ScrollingFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
-ScrollingFrame.ScrollBarThickness = 4
-
-TextButton_7.Parent = ScrollingFrame
-TextButton_7.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TextButton_7.Position = UDim2.new(0.0495117195, 0, 0.042857144, 0)
-TextButton_7.Size = UDim2.new(0, 267, 0, 50)
-TextButton_7.ZIndex = 0
-TextButton_7.Font = Enum.Font.GothamMedium
-TextButton_7.Text = "WalkSpeed"
-TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_7.TextSize = 16.000
-
-Frame_4.Parent = TextButton_7
-Frame_4.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Frame_4.BorderSizePixel = 0
-Frame_4.Position = UDim2.new(0, 0, 0.879999995, 0)
-Frame_4.Size = UDim2.new(0, 267, 0, 6)
-
-UICorner_4.Parent = Frame_4
-
-UICorner_5.Parent = TextButton_7
-
-Follow.Name = "Follow"
-Follow.Parent = TextButton_7
-Follow.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
-Follow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Follow.BackgroundTransparency = 1.000
-Follow.Position = UDim2.new(0, 329, 0, 83)
-Follow.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
-Follow.SizeConstraint = Enum.SizeConstraint.RelativeXX
-Follow.Visible = false
-Follow.Image = "rbxassetid://2267692278"
-
-UIListLayout_2.Parent = ScrollingFrame
-UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_2.Padding = UDim.new(0, 10)
-
-Walknum.Name = "Walknum"
-Walknum.Parent = ScrollingFrame
-Walknum.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Walknum.BorderSizePixel = 0
-Walknum.Position = UDim2.new(0.0495117195, 0, 0.208571434, 0)
-Walknum.Size = UDim2.new(0, 267, 0, 50)
-Walknum.ZIndex = 0
-Walknum.Font = Enum.Font.GothamMedium
-Walknum.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-Walknum.PlaceholderText = "Number"
-Walknum.Text = ""
-Walknum.TextColor3 = Color3.fromRGB(255, 255, 255)
-Walknum.TextSize = 16.000
-
-UICorner_6.Parent = Walknum
-
-Frame_5.Parent = Walknum
-Frame_5.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Frame_5.BorderSizePixel = 0
-Frame_5.Position = UDim2.new(0, 0, 0.879999995, 0)
-Frame_5.Size = UDim2.new(0, 267, 0, 6)
-
-UICorner_7.Parent = Frame_5
-
-TextButton_8.Parent = ScrollingFrame
-TextButton_8.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-TextButton_8.Position = UDim2.new(0.0495117195, 0, 0.042857144, 0)
-TextButton_8.Size = UDim2.new(0, 267, 0, 50)
-TextButton_8.ZIndex = 0
-TextButton_8.Font = Enum.Font.GothamMedium
-TextButton_8.Text = "Click Tp"
-TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_8.TextSize = 16.000
-
-Frame_6.Parent = TextButton_8
-Frame_6.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Frame_6.BorderSizePixel = 0
-Frame_6.Position = UDim2.new(0, 0, 0.879999995, 0)
-Frame_6.Size = UDim2.new(0, 267, 0, 6)
-
-UICorner_8.Parent = Frame_6
-
-UICorner_9.Parent = TextButton_8
-
-Follow_2.Name = "Follow"
-Follow_2.Parent = TextButton_8
-Follow_2.AnchorPoint = Vector2.new(0.699999988, 0.699999988)
-Follow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Follow_2.BackgroundTransparency = 1.000
-Follow_2.Position = UDim2.new(0, 329, 0, 83)
-Follow_2.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
-Follow_2.SizeConstraint = Enum.SizeConstraint.RelativeXX
-Follow_2.Visible = false
-Follow_2.Image = "rbxassetid://2267692278"
-
-noti.Name = "noti"
-noti.Parent = TextButton_8
-noti.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
-noti.BorderSizePixel = 0
-noti.Position = UDim2.new(0, 688, 0, 270)
-noti.Size = UDim2.new(0.774232209, 0, 1.14999998, 0)
-noti.Style = Enum.FrameStyle.RobloxRound
-
-TextLabel_2.Parent = noti
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.ClipsDescendants = true
-TextLabel_2.Position = UDim2.new(-0.0448327288, 0, 0.640004039, 0)
-TextLabel_2.Size = UDim2.new(0, 215, 0, 13)
-TextLabel_2.Font = Enum.Font.Gotham
-TextLabel_2.Text = "Press Control Or Ctrl to Tp."
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
-UITextSizeConstraint.Parent = TextLabel_2
-UITextSizeConstraint.MaxTextSize = 28
-
-TextLabel_3.Parent = noti
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.ClipsDescendants = true
-TextLabel_3.Position = UDim2.new(0.0765024126, 0, -0.000864828005, 0)
-TextLabel_3.Size = UDim2.new(0, 108, 0, 19)
-TextLabel_3.Font = Enum.Font.Gotham
-TextLabel_3.Text = "Notification"
-TextLabel_3.TextColor3 = Color3.fromRGB(166, 198, 247)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
-
-UITextSizeConstraint_2.Parent = TextLabel_3
-UITextSizeConstraint_2.MaxTextSize = 19
-
-close_2.Name = "close"
-close_2.Parent = noti
-close_2.BackgroundTransparency = 1.000
-close_2.Position = UDim2.new(0.900201201, 0, -0.0975543559, 0)
-close_2.Size = UDim2.new(0, 25, 0, 25)
-close_2.ZIndex = 200000000
-close_2.Image = "rbxassetid://3926305904"
-close_2.ImageColor3 = Color3.fromRGB(166, 198, 247)
-close_2.ImageRectOffset = Vector2.new(284, 4)
-close_2.ImageRectSize = Vector2.new(24, 24)
-
-Main_ShadowPng.Name = "Main_ShadowPng"
-Main_ShadowPng.Parent = Main
-Main_ShadowPng.BackgroundTransparency = 1.000
-Main_ShadowPng.Position = UDim2.new(-0.115026012, 0, -0.228662387, 0)
-Main_ShadowPng.Size = UDim2.new(0, 362, 0, 381)
-Main_ShadowPng.ZIndex = 0
-Main_ShadowPng.Image = "rbxassetid://313486536"
-
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = Main
-MainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0, 0, 0, 10)
-MainFrame.Size = UDim2.new(0, 290, 0, 268)
-
-fpsframe.Name = "fpsframe"
-fpsframe.Parent = Main
-fpsframe.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-fpsframe.BorderSizePixel = 0
-fpsframe.Position = UDim2.new(0, 0, 0, 21)
-fpsframe.Size = UDim2.new(0, 290, 0, 256)
-fpsframe.Visible = false
-fpsframe.ZIndex = 200
-
-ScrollingFrame_2.Parent = fpsframe
-ScrollingFrame_2.Active = true
-ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScrollingFrame_2.BackgroundTransparency = 1.000
-ScrollingFrame_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-ScrollingFrame_2.BorderSizePixel = 0
-ScrollingFrame_2.Position = UDim2.new(0, 0, 0.0223880596, 0)
-ScrollingFrame_2.Size = UDim2.new(0, 290, 0, 264)
-ScrollingFrame_2.ZIndex = 100
-ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 4, 0)
-ScrollingFrame_2.ScrollBarThickness = 4
-
-UIListLayout_3.Parent = ScrollingFrame_2
-UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_3.Padding = UDim.new(0, 10)
-
-AimbotButton.Name = "AimbotButton"
-AimbotButton.Parent = ScrollingFrame_2
-AimbotButton.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-AimbotButton.Position = UDim2.new(0.155172408, 0, 0.0400000066, 0)
-AimbotButton.Size = UDim2.new(0, 267, 0, 50)
-AimbotButton.ZIndex = 9
-AimbotButton.Font = Enum.Font.GothamMedium
-AimbotButton.Text = "Aimbot"
-AimbotButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-AimbotButton.TextSize = 16.000
-
-UICorner_10.Parent = AimbotButton
-
-Frame_7.Parent = AimbotButton
-Frame_7.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Frame_7.BorderSizePixel = 0
-Frame_7.Position = UDim2.new(0, 0, 0.900000036, 0)
-Frame_7.Size = UDim2.new(0, 267, 0, 6)
-
-ESPButton.Name = "ESPButton"
-ESPButton.Parent = ScrollingFrame_2
-ESPButton.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-ESPButton.Position = UDim2.new(0.155172408, 0, 0.225714296, 0)
-ESPButton.Size = UDim2.new(0, 267, 0, 50)
-ESPButton.ZIndex = 9
-ESPButton.Font = Enum.Font.GothamMedium
-ESPButton.Text = "ESP"
-ESPButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ESPButton.TextSize = 16.000
-
-Frame_8.Parent = ESPButton
-Frame_8.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Frame_8.BorderSizePixel = 0
-Frame_8.Position = UDim2.new(0, 0, 0.899999976, 0)
-Frame_8.Size = UDim2.new(0, 267, 0, 5)
-
-UICorner_11.Parent = ESPButton
-
-UIListLayout_4.Parent = fpsframe
-UIListLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_4.Padding = UDim.new(0, 12)
-
-openframe.Name = "openframe"
-openframe.Parent = ScreenGui
-openframe.BackgroundColor3 = Color3.fromRGB(0, 4, 1)
-openframe.BorderSizePixel = 0
-openframe.Position = UDim2.new(0.409387231, 0, 0.145772785, 0)
-openframe.Size = UDim2.new(0, 289, 0, 34)
-openframe.Visible = false
-openframe.Draggable = false
-
-eeeee.Name = "eeeee"
-eeeee.Parent = openframe
-eeeee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-eeeee.BackgroundTransparency = 1.000
-eeeee.Size = UDim2.new(0, 290, 0, 32)
-eeeee.Font = Enum.Font.GothamMedium
-eeeee.Text = "Scripts"
-eeeee.TextColor3 = Color3.fromRGB(255, 255, 255)
-eeeee.TextSize = 14.000
-
-Openbutton.Name = "Openbutton"
-Openbutton.Parent = openframe
-Openbutton.BackgroundTransparency = 1.000
-Openbutton.Position = UDim2.new(0.886206865, 0, 0.09375, 0)
-Openbutton.Size = UDim2.new(0, 25, 0, 25)
-Openbutton.ZIndex = 2
-Openbutton.Image = "rbxassetid://3926305904"
-Openbutton.ImageRectOffset = Vector2.new(284, 4)
-Openbutton.ImageRectSize = Vector2.new(24, 24)
-
-loginframe.Name = "loginframe"
-loginframe.Parent = ScreenGui
-loginframe.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-loginframe.BorderSizePixel = 0
-loginframe.Position = UDim2.new(0.408317089, 0, 0.307507485, 0)
-loginframe.Size = UDim2.new(0, 300, 0, 40)
-loginframe.ZIndex = 0
-
-TextLabel_4.Parent = loginframe
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(-0.0233333334, 0, 0, 0)
-TextLabel_4.Size = UDim2.new(0, 306, 0, 39)
-TextLabel_4.Font = Enum.Font.GothamMedium
-TextLabel_4.Text = "Key"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 16.000
-
-Frame_9.Parent = loginframe
-Frame_9.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Frame_9.BorderSizePixel = 0
-Frame_9.Position = UDim2.new(-0.00094401039, 0, 0.55175066, 0)
-Frame_9.Size = UDim2.new(0, 300, 0, 140)
-Frame_9.ZIndex = 0
-
-Password.Name = "Password"
-Password.Parent = Frame_9
-Password.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Password.BorderColor3 = Color3.fromRGB(11, 11, 11)
-Password.BorderSizePixel = 0
-Password.Position = UDim2.new(0.0833333358, 0, 0.126190498, 0)
-Password.Size = UDim2.new(0, 250, 0, 50)
-Password.Font = Enum.Font.GothamMedium
-Password.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-Password.PlaceholderText = "Enter Your Key Here"
-Password.Text = ""
-Password.TextColor3 = Color3.fromRGB(255, 255, 255)
-Password.TextSize = 14.000
-
-UICorner_12.Parent = Password
-
-Loginbutton.Name = "Loginbutton"
-Loginbutton.Parent = Frame_9
-Loginbutton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Loginbutton.BorderSizePixel = 0
-Loginbutton.Position = UDim2.new(0.25, 0, 0.585714281, 0)
-Loginbutton.Size = UDim2.new(0, 150, 0, 45)
-Loginbutton.Font = Enum.Font.GothamMedium
-Loginbutton.Text = "Login"
-Loginbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-Loginbutton.TextSize = 14.000
-
-UICorner_13.Parent = Loginbutton
-
-UICorner_14.Parent = Frame_9
-
-UICorner_15.Parent = loginframe
-
-noti_2.Name = "noti"
-noti_2.Parent = loginframe
-noti_2.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
-noti_2.BorderSizePixel = 0
-noti_2.Position = UDim2.new(0, 659, 0, 242)
-noti_2.Size = UDim2.new(0.826666653, 0, 2.8499999, 0)
-noti_2.Style = Enum.FrameStyle.RobloxRound
-
-ImageLabel.Parent = noti_2
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0, 7, 0, -4)
-ImageLabel.Size = UDim2.new(0.431967527, 0, 1.06265485, 0)
-ImageLabel.Image = "rbxassetid://11523302818"
-
-TextLabel_5.Parent = noti_2
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.BorderSizePixel = 0
-TextLabel_5.ClipsDescendants = true
-TextLabel_5.Position = UDim2.new(0.467741936, 0, 0.289473683, 0)
-TextLabel_5.Size = UDim2.new(0, 101, 0, 24)
-TextLabel_5.Font = Enum.Font.Gotham
-TextLabel_5.Text = "Join The Discord For Key"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextScaled = true
-TextLabel_5.TextSize = 14.000
-TextLabel_5.TextWrapped = true
-
-UITextSizeConstraint_3.Parent = TextLabel_5
-UITextSizeConstraint_3.MaxTextSize = 28
-
-copy.Name = "copy"
-copy.Parent = noti_2
-copy.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
-copy.BorderSizePixel = 0
-copy.Position = UDim2.new(0, 118, 0, 71)
-copy.Size = UDim2.new(0.375, 0, 0.263157904, 0)
-copy.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
-copy.Font = Enum.Font.Gotham
-copy.Text = "Copy"
-copy.TextColor3 = Color3.fromRGB(255, 255, 255)
-copy.TextSize = 14.000
-
-TextLabel_6.Parent = noti_2
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.BorderSizePixel = 0
-TextLabel_6.ClipsDescendants = true
-TextLabel_6.Position = UDim2.new(0.466136336, 0, 0.027205348, 0)
-TextLabel_6.Size = UDim2.new(0, 108, 0, 19)
-TextLabel_6.Font = Enum.Font.Gotham
-TextLabel_6.Text = "Discord"
-TextLabel_6.TextColor3 = Color3.fromRGB(166, 198, 247)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
-TextLabel_6.TextWrapped = true
-
-UITextSizeConstraint_4.Parent = TextLabel_6
-UITextSizeConstraint_4.MaxTextSize = 19
-
--- Scripts:
-
-local function FUEYKP_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.fpsframe.Visible = true
-		script.Parent.Parent.Parent.hubframe.Visible = false
-		script.Parent.Parent.Parent.MainFramee.Visible = false
-	end)
-end
-coroutine.wrap(FUEYKP_fake_script)()
-local function JMVRB_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(JMVRB_fake_script)()
-local function OFCXTAF_fake_script() -- menu.LocalScript 
-	local script = Instance.new('LocalScript', menu)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.Menus.Visible = false
-	end)
-end
-coroutine.wrap(OFCXTAF_fake_script)()
-local function OQNDL_fake_script() -- menu.LocalScript 
-	local script = Instance.new('LocalScript', menu)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(OQNDL_fake_script)()
-local function CPUWKZI_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.hubframe.Visible = true
-		script.Parent.Parent.Parent.fpsframe.Visible = false
-		script.Parent.Parent.Parent.MainFramee.Visible = false
-		
-	end)
-end
-coroutine.wrap(CPUWKZI_fake_script)()
-local function QGZEXT_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(QGZEXT_fake_script)()
-local function DCGHXZ_fake_script() -- TextButton_3.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_3)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.fpsframe.Visible = false
-		script.Parent.Parent.Parent.hubframe.Visible = false
-		script.Parent.Parent.Parent.CloseFrame.Visible = true
-		script.Parent.Parent.Parent.MainFramee.Visible = true
-	end)
-end
-coroutine.wrap(DCGHXZ_fake_script)()
-local function WLBCYRL_fake_script() -- TextButton_3.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_3)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(WLBCYRL_fake_script)()
-local function MBTKL_fake_script() -- TextButton_4.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_4)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simplityv2/main/main"))()
-	end)
-end
-coroutine.wrap(MBTKL_fake_script)()
-local function FGKI_fake_script() -- TextButton_4.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_4)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(FGKI_fake_script)()
-local function LFKW_fake_script() -- TextButton_5.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_5)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalGames/main/UG'))()
-		end)
-end
-coroutine.wrap(LFKW_fake_script)()
-local function VWDOF_fake_script() -- TextButton_5.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_5)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(VWDOF_fake_script)()
-local function XCYBB_fake_script() -- TextButton_6.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_6)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		loadstring(game: GetObjects("rbxassetid:// 8127297852")[1]. Source) ()
-		end)
-end
-coroutine.wrap(XCYBB_fake_script)()
-local function TYYDROY_fake_script() -- TextButton_6.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_6)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(TYYDROY_fake_script)()
-local function GLSKW_fake_script() -- menu_2.LocalScript 
-	local script = Instance.new('LocalScript', menu_2)
-
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Menus.Visible = true
-	end)
-	
-end
-coroutine.wrap(GLSKW_fake_script)()
-local function FKUGCM_fake_script() -- menu_2.LocalScript 
-	local script = Instance.new('LocalScript', menu_2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(FKUGCM_fake_script)()
-local function UPVZL_fake_script() -- close.LocalScript 
-	local script = Instance.new('LocalScript', close)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.Parent.Main.Visible = false
-		script.Parent.Parent.Parent.Parent.openframe.Visible = true
-	end)
-end
-coroutine.wrap(UPVZL_fake_script)()
-local function YYQC_fake_script() -- close.LocalScript 
-	local script = Instance.new('LocalScript', close)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(YYQC_fake_script)()
-local function DXCFE_fake_script() -- TextButton_7.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_7)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.MouseButton1Click:Connect(function()
-			local plr = game.Players.LocalPlayer 
-			local char = plr.Character 
-			char.Humanoid.WalkSpeed = (script.Parent.Parent.Walknum.Text)
-	
-		end)
-		end)
-end
-coroutine.wrap(DXCFE_fake_script)()
-local function QGYIKO_fake_script() -- TextButton_8.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_8)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.noti.Visible = true
-		local plr = game.Players.LocalPlayer
-		local mo = plr:GetMouse()
-		local UIS = game:GetService("UserInputService")
-	
-		local HoldingControl = false
-	
-		mo.Button1Down:Connect(function()
-			if HoldingControl then
-				plr.Character:MoveTo(mo.Hit.p)
-			end
-		end)
-	
-		UIS.InputBegan:Connect(function(Input,Processed)
-			if Input.UserInputType == Enum.UserInputType.Keyboard then
-				if Input.KeyCode == Enum.KeyCode.LeftControl then
-					HoldingControl = true
-				elseif Input.KeyCode == Enum.KeyCode.RightControl then
-					HoldingControl = true	
-				end
-			end
-		end)
-	
-		UIS.InputEnded:Connect(function(Input,Processed)
-			if Input.UserInputType == Enum.UserInputType.Keyboard then
-				if Input.KeyCode == Enum.KeyCode.LeftControl then
-					HoldingControl = false
-				elseif Input.KeyCode == Enum.KeyCode.RightControl then
-					HoldingControl = false
-				end
-			end
-		end)
-		end)
-end
-coroutine.wrap(QGYIKO_fake_script)()
-local function MPGTTXT_fake_script() -- close_2.LocalScript 
-	local script = Instance.new('LocalScript', close_2)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.noti.Visible = false
-	end)
-end
-coroutine.wrap(MPGTTXT_fake_script)()
-local function FHYRAC_fake_script() -- close_2.LocalScript 
-	local script = Instance.new('LocalScript', close_2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(FHYRAC_fake_script)()
-local function TPZHX_fake_script() -- AimbotButton.LocalScript 
-	local script = Instance.new('LocalScript', AimbotButton)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		--> variables
-		local UIS = game:GetService("UserInputService")
-		local camera = game.Workspace.CurrentCamera
-		--> getting the closest player
-	local function getClosest()
-			local closestPlayer = nil
-			local closesDist = math.huge
-			for i,v in pairs(game.Players:GetPlayers()) do
-				if v ~= game.Players.LocalPlayer and v.Team == game.Players.LocalPlayer.Team then
-					local Dist = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).magnitude
-					if Dist < closesDist then
-						closesDist = Dist
-						closestPlayer = v
-					end
-				end
-			end
-			return closestPlayer
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local X = Material.Load({
+    Title = "Script hub",
+    Style = 3,
+    SizeX = 360,
+    SizeY = 350,
+    Theme = "Aqua",
+    ColorOverrides = {
+        MainFrame = Color3.fromRGB(235, 235, 235)
+    }
+})
+local Y = X.Banner({
+    Text = 
+    
+    "Wellcome to ScriptHub.exe"
+})
+
+local Y = X.New({
+    Title = "1"
+})
+
+local Z = X.New({
+    Title = "KAT"
+})
+
+local O = X.New({
+    Title = "Scripting Tools"
+})
+
+local U = X.New({
+    Title = "Tapping Sim"
+})
+
+local A = Y.Button({
+    Text = "Rejoin",
+    Callback = function()
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)
+    end,
+    Menu = {
+        Information = function(self)
+ local         O = X.Banner({
+                Text = "Is a rejoin button :\ what u want from it."
+            })
+        end
+    }
+})
+
+local  B = Y.Toggle({
+    Text = "I'm a switch",
+    Callback = function(Value)
+        print(Value)
+    end,
+    Enabled = false
+})
+
+local C = Y.Slider({
+    Text = "Slip and... you get the idea",
+    Callback = function(Value)
+        print(Value)
+    end,
+    Min = 200,
+    Max = 400,
+    Def = 300
+})
+
+local D = Y.Dropdown({
+    Text = "Dropping care package",
+    Callback = function(Value)
+        print(Value)
+    end,
+    Options = {
+        "Floor 1",
+        "Floor 2",
+        "Floor 3",
+        "Floor 4",
+        "Floor 5"
+    },
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Test alert!"
+            })
+        end
+    }
+})
+
+local E = Y.ChipSet({
+    Text = "Chipping away",
+    Callback = function(ChipSet)
+        table.foreach(ChipSet, function(Option, Value)
+            print(Option, Value)
+        end)
+    end,
+    Options = {
+        ESP = true,
+        TeamCheck = false,
+        UselessBool = {
+            Enabled = true,
+            Menu = {
+                Information = function(self)
+                    X.Banner({
+                        Text = "This bool has absolutely no purpose whatsoever."
+                    })
+                end
+            }
+        }
+    }
+})
+
+local F = Y.DataTable({
+    Text = "Chipping away",
+    Callback = function(ChipSet)
+        table.foreach(ChipSet, function(Option, Value)
+            print(Option, Value)
+        end)
+    end,
+    Options = {
+        ESP2 = true,
+        TeamCheck2 = false,
+        UselessBool2 = {
+            Enabled = true,
+            Menu = {
+                Information = function(self)
+                    X.Banner({
+                        Text = "This bool ALSO has absolutely no purpose. Sorry."
+                    })
+                end
+            }
+        }
+    }
+})
+
+local G = Y.ColorPicker({
+    Text = "ESP Colour",
+    Default = Color3.fromRGB(0,255,110),
+    Callback = function(Value)
+        print("RGB:", Value.R * 255, Value.G * 255, Value.B * 255)
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "This changes the color of your ESP."
+            })
+        end
+    }
+})
+
+local H = Y.TextField({
+    Text = "Country",
+    Callback = function(Value)
+        print(Value)
+    end,
+    Menu = {
+        GB = function(self)
+            self.SetText("GB")
+        end,
+        JP = function(self)
+            self.SetText("JP")
+        end,
+        KO = function(self)
+            self.SetText("KO")
+        end
+    }
+})
+
+local X = Z.Button({
+   Text = "Aimbot",
+    Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Raw%20Main.lua"))()
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "This can get u banned use it at your own risk."
+            })
+        end
+    }
+})
+
+local B = Z.Button({
+   Text = "ESP",
+    Callback = function()
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local Highlight = Instance.new("Highlight")
+Highlight.Name = "Highlight"
+function ApplyToCurrentPlayers()
+    for i,player in pairs(Players:GetChildren()) do 
+        repeat wait() until player.Character
+        if not player.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
+            local HighlightClone = Highlight:Clone()
+            HighlightClone.Adornee = player.Character
+            HighlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart")
+            HighlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+            HighlightClone.Name = "Highlight"
+        end
+    end
+end    
+RunService.Heartbeat:Connect(function()
+    ApplyToCurrentPlayers()
+end)
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "."
+            })
+        end
+    }
+})
+
+local B = O.Button({
+    Text = "Anti AFK",
+    Callback = function()
+while not game:IsLoaded() do wait() end
+
+repeat wait() until game.Players.LocalPlayer.Character
+
+Players = game:GetService("Players")
+
+local GC = getconnections or get_signal_cons
+if GC then
+	for i,v in pairs(GC(Players.LocalPlayer.Idled)) do
+		if v["Disable"] then v["Disable"](v)
+		elseif v["Disconnect"] then v["Disconnect"](v)
 		end
-	
-		--> starting the aimbot
-			_G.aim = false
-			UIS.InputBegan:Connect(function(inp)
-				if inp.UserInputType == Enum.UserInputType.MouseButton2 then
-					_G.aim = true
-					while wait() do
-						camera.CFrame = CFrame.new(camera.CFrame.Position,getClosest().Character.Head.Position)
-						if _G.aim == false then return end
-					end
-				end
-			end)
-			--> ending the aimbot
-			UIS.InputEnded:Connect(function(inp)
-				if inp.UserInputType == Enum.UserInputType.MouseButton2 then
-					_G.aim = false
-				end
-			end)
-		end)
+	end
+else
+  Players.LocalPlayer.Idled:Connect(function()
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton2(Vector2.new())
+  end)
 end
-coroutine.wrap(TPZHX_fake_script)()
-local function WBBJ_fake_script() -- AimbotButton.LocalScript 
-	local script = Instance.new('LocalScript', AimbotButton)
+    end,
+    Menu = {
+        Information = function(self)
+            Z.Banner({
+                Text = "Is a rejoin button :\ what u want from it."
+            })
+        end
+    }
+})
 
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(WBBJ_fake_script)()
-local function UDKXA_fake_script() -- ESPButton.LocalScript 
-	local script = Instance.new('LocalScript', ESPButton)
 
-	script.Parent.MouseButton1Down:Connect(function()
-	
-		local Players = game:GetService("Players")
-		local RunService = game:GetService("RunService")
-		local Highlight = Instance.new("Highlight")
-		Highlight.Name = "Highlight"
-		function ApplyToCurrentPlayers()
-			for i,player in pairs(Players:GetChildren()) do 
-				repeat wait() until player.Character
-				if not player.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
-					local HighlightClone = Highlight:Clone()
-					HighlightClone.Adornee = player.Character
-					HighlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart")
-					HighlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-					HighlightClone.Name = "Highlight"
-				end
-			end
-		end    
-		RunService.Heartbeat:Connect(function()
-			ApplyToCurrentPlayers()
-		end)
-		end)
-end
-coroutine.wrap(UDKXA_fake_script)()
-local function CPXKW_fake_script() -- ESPButton.LocalScript 
-	local script = Instance.new('LocalScript', ESPButton)
+local B = O.Button({
+    Text = "Remote Spy",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EnzoDark0/seqwe/main/.gitignore"))()
+    end,
+    Menu = {
+        Information = function(self)
+            A.Banner({
+                Text = "Simple Remote Spy."
+            })
+        end
+    }
+})
 
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Disabled = true
-		script.Click:Play()
-		wait(0.1)
-		script.Disabled = false
-	end)
-	
-end
-coroutine.wrap(CPXKW_fake_script)()
-local function RADH_fake_script() -- Openbutton.LocalScript 
-	local script = Instance.new('LocalScript', Openbutton)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.Main.Visible = true
-		script.Parent.Parent.Parent.openframe.Visible = false
-	end)
-end
-coroutine.wrap(RADH_fake_script)()
-local function FITI_fake_script() -- Loginbutton.LocalScript 
-	local script = Instance.new('LocalScript', Loginbutton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		if script.Parent.Parent.Password.Text == "ScriptHub" then
-			
-			script.Parent.Parent.Parent.Parent.loginframe.Visible = false
-			script.Parent.Parent.Parent.Parent.Main.Visible = true
-		end
-	end)
-end
-coroutine.wrap(FITI_fake_script)()
-local function ZUJS_fake_script() -- copy.LocalScript 
-	local script = Instance.new('LocalScript', copy)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		setclipboard('https://discord.gg/3J9ayEt7')
-	end)
-end
-coroutine.wrap(ZUJS_fake_script)()
-local function BEDZ_fake_script() -- noti_2.LocalScript 
-	local script = Instance.new('LocalScript', noti_2)
-
-	wait(30)
-	script.Parent.Parent.noti.Visible = false
-end
-coroutine.wrap(BEDZ_fake_script)()
+local A = O.Button({
+    Text = "Dex V4",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/dex/main/main"))()
+    end,
+    Menu = {
+        Information = function(self)
+            A.Banner({
+                Text = "Dex V4."
+            })
+        end
+    }
+})
 
 local plr = game.Players.LocalPlayer
 local OSTime = os.time()
